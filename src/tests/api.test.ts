@@ -1,9 +1,6 @@
-import {
-  sumRepositoriesStars,
-  getFormattedDate,
-  getFormattedData,
-  Repository,
-} from "../app/api";
+import { sumRepositoriesStars, getFormattedDate, getFormattedData } from "../app/api";
+
+import { Repository } from "../app/interfaces/repository"
 
 test('getFormattedData return formatted api data', async () => {
   const fixture = [
