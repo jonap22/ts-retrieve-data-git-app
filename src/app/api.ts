@@ -1,10 +1,4 @@
-interface Repository {
-    stargazers_count: number;
-    description: string;
-    name: string;
-    created_at: string;
-    url: string;
-}
+import { Repository } from "./interfaces/repository";
 
 function getURL(): string {
     return "https://api.github.com/orgs/stackbuilders/repos";
@@ -116,4 +110,5 @@ export {
     setRankedReposOnScreen,
     setLatestReposOnScreen,
     setTotalStarsOnScreen,
+    Repository
 };
