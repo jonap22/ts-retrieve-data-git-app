@@ -1,14 +1,19 @@
 import { getElementById, addClickListener } from "../helpers/domHelper.js";
-import { setLatestReposOnScreen, setRankedReposOnScreen, setTotalStarsOnScreen } from "../api.js";
+import { setAlphabeticalReposOnScreen, setLatestReposOnScreen, setRankedReposOnScreen, setTop5StarredReposOnScreen, setTotalStarsOnScreen } from "../injector.js";
 
 function initializeApp() {
-  const button1 = getElementById("btnRankedRepos");
-  const button2 = getElementById("btnLatestRepositories");
-  const button3 = getElementById("btnStars");
+  const buttonRankedRepos = getElementById("btnRankedRepos");
+  const buttonLatestRepos = getElementById("btnLatestRepositories");
+  const buttonStars = getElementById("btnStars");
+  const buttonAlphabeticalRepos = getElementById("btnAlphabeticalRepos");
+  const buttonFiveBestRepos = getElementById("btnFiveBestRepos");
 
-  addClickListener(button1, setRankedReposOnScreen);
-  addClickListener(button2, setLatestReposOnScreen);
-  addClickListener(button3, setTotalStarsOnScreen);
+
+  addClickListener(buttonRankedRepos, setRankedReposOnScreen);
+  addClickListener(buttonLatestRepos, setLatestReposOnScreen);
+  addClickListener(buttonStars, setTotalStarsOnScreen);
+  addClickListener(buttonAlphabeticalRepos, setAlphabeticalReposOnScreen);
+  addClickListener(buttonFiveBestRepos, setTop5StarredReposOnScreen);
 }
 
 export { initializeApp };

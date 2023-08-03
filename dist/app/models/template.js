@@ -1,4 +1,4 @@
-import { getFormattedDate } from "./api.js";
+import { getFormattedDate } from "../injector.js";
 class RepositoryTemplate {
     data;
     constructor(data) {

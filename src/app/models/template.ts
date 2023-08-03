@@ -1,4 +1,4 @@
-import { getFormattedDate } from "../api.js";
+import { getFormattedDate } from "../injector.js";
 import { Repository } from "./repository.js";
 
 interface HTMLTemplate {
