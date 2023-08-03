@@ -1,25 +1,38 @@
-import { getFormattedDate } from "./api.js";
-class RepositoryTemplate {
-    data;
-    constructor(data) {
+import { getFormattedDate } from "../api.js";
+import { Repository } from "./repository.js";
+
+interface HTMLTemplate {
+    render(): string;
+}
+
+class RepositoryTemplate implements HTMLTemplate {
+    private data: Repository;
+
+    constructor(data: Repository) {
         this.data = data;
     }
-    getRepositoryName() {
+
+    private getRepositoryName(): string {
         return `<li class="list-group-item"><strong>Repository name:</strong> ${this.data.name}</li>`;
     }
-    getCreatedDate() {
+
+    private getCreatedDate(): string {
         return `<li class="list-group-item"><strong>Created on:</strong> ${getFormattedDate(this.data.created_at)}</li>`;
     }
-    getDescription() {
+
+    private getDescription(): string {
         return `<li class="list-group-item"><strong>Description:</strong> ${this.data.description}</li>`;
     }
-    getStargazersCount() {
+
+    private getStargazersCount(): string {
         return `<li class="list-group-item"><strong>Stars number:</strong> ${this.data.stargazers_count}</li>`;
     }
-    getRepoURL() {
+
+    private getRepoURL(): string {
         return `<li class="list-group-item"><strong>Repo URL:</strong> ${this.data.url}</li>`;
     }
-    render() {
+
+    render(): string {
         return `
       <ul class="list-group mb-3 mx-auto">
         ${this.getRepositoryName()}
@@ -31,14 +44,21 @@ class RepositoryTemplate {
     `;
     }
 }
-function getTitleTemplate(title) {
+
+function getTitleTemplate(title: string): string {
     return `<h2 class='mb-4'>${title}</h2>`;
 }
-function getCardTemplate(value, title) {
+
+function getCardTemplate(value: number, title: string): string {
     return `
     <div class="card card-body mb-3">
       <p><strong>${title}:</strong> ${value}</p>
     </div>
   `;
 }
-export { RepositoryTemplate, getTitleTemplate, getCardTemplate };
+
+export {
+    RepositoryTemplate,
+    getTitleTemplate,
+    getCardTemplate
+};

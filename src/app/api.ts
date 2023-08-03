@@ -1,5 +1,5 @@
-import { Repository } from "./interfaces/repository";
-import { getCardTemplate, getItemsGroupTemplate, getTitleTemplate } from "./template";
+import { Repository } from "./models/repository.js";
+import { RepositoryTemplate, getCardTemplate, getTitleTemplate } from "./models/template.js";
 
 function getURL(): string {
     return "https://api.github.com/orgs/stackbuilders/repos";
@@ -26,7 +26,8 @@ async function getFormattedData(responseData: Repository[]): Promise<Repository[
 function concatRankedReposOnHTML(data: Repository[], htmlOutput: string) {
     data.filter(repo => repo.stargazers_count > 5)
         .map(repo => {
-            htmlOutput += getItemsGroupTemplate(repo)
+            const repoTemplate = new RepositoryTemplate(repo);
+            htmlOutput += repoTemplate.render();
         });
 
     document.getElementById('repositoryContent')!.innerHTML = htmlOutput;
@@ -48,7 +49,8 @@ function concatLatestReposOnHTML(data: Repository[], htmlOutput: string) {
     );
     const latestRepos = sortedRepos.slice(0, 5);
     latestRepos.map(repo => {
-        htmlOutput += getItemsGroupTemplate(repo);
+        const repoTemplate = new RepositoryTemplate(repo);
+        htmlOutput += repoTemplate.render();
     });
 
     document.getElementById('repositoryContent')!.innerHTML = htmlOutput;

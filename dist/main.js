@@ -1,4 +1,4 @@
-import { setLatestReposOnScreen, setRankedReposOnScreen, setTotalStarsOnScreen } from "./app/api";
+import { setLatestReposOnScreen, setRankedReposOnScreen, setTotalStarsOnScreen } from "./app/api.js";
 const button1 = document.getElementById("btnRankedRepos");
 const button2 = document.getElementById("btnLatestRepositories");
 const button3 = document.getElementById("btnStars");
