@@ -25,7 +25,7 @@
     // "moduleDetection": "auto",                        /* Control what method is used to detect module-format JS files. */
 
     /* Modules */
-    "module": "ES2015",
+    "module": "ESNext",
     // "isolatedModules": true,
     "outDir": "./dist",                                /* Specify what module code is generated. */
     "rootDir": "./src",                                  /* Specify the root folder within your source files. */
@@ -92,8 +92,8 @@
                                /* Skip type checking all .d.ts files. */
   },
   "include": [
-    "src/app/*.ts"
-  ],
+    "src/app/**/*.ts"
+, "src/main.ts"  ],
   "exclude": [
     "node_modules",
   ],
