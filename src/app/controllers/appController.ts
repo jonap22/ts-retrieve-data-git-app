@@ -8,7 +8,6 @@ function initializeApp() {
   const buttonAlphabeticalRepos = getElementById("btnAlphabeticalRepos");
   const buttonFiveBestRepos = getElementById("btnFiveBestRepos");
 
-
   addClickListener(buttonRankedRepos, setRankedReposOnScreen);
   addClickListener(buttonLatestRepos, setLatestReposOnScreen);
   addClickListener(buttonStars, setTotalStarsOnScreen);

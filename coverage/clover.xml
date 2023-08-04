@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1691158264840" clover="3.2.0">
+  <project timestamp="1691158264840" name="All files">
+    <metrics statements="64" coveredstatements="39" conditionals="1" coveredconditionals="0" methods="35" coveredmethods="26" elements="100" coveredelements="65" complexity="0" loc="64" ncloc="64" packages="3" files="4" classes="4"/>
+    <package name="app">
+      <metrics statements="18" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="1"/>
+      <file name="injector.ts" path="/Users/jonathan/Documents/Repos/Stack Builders/ts-retrieve-data-git-app/src/app/injector.ts">
+        <metrics statements="18" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="1"/>
+        <line num="13" count="9" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="48" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="app.helpers">
+      <metrics statements="27" coveredstatements="27" conditionals="0" coveredconditionals="0" methods="15" coveredmethods="15"/>
+      <file name="concatHelper.ts" path="/Users/jonathan/Documents/Repos/Stack Builders/ts-retrieve-data-git-app/src/app/helpers/concatHelper.ts">
+        <metrics statements="27" coveredstatements="27" conditionals="0" coveredconditionals="0" methods="15" coveredmethods="15"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="29" count="3" type="stmt"/>
+        <line num="30" count="4" type="stmt"/>
+        <line num="31" count="2" type="stmt"/>
+        <line num="34" count="3" type="stmt"/>
+        <line num="35" count="2" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="39" count="2" type="stmt"/>
+        <line num="40" count="2" type="stmt"/>
+        <line num="45" count="3" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="50" count="2" type="stmt"/>
+        <line num="51" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="app.models">
+      <metrics statements="19" coveredstatements="11" conditionals="1" coveredconditionals="0" methods="13" coveredmethods="10"/>
+      <file name="api.ts" path="/Users/jonathan/Documents/Repos/Stack Builders/ts-retrieve-data-git-app/src/app/models/api.ts">
+        <metrics statements="10" coveredstatements="3" conditionals="1" coveredconditionals="0" methods="4" coveredmethods="2"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="10" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+      </file>
+      <file name="template.ts" path="/Users/jonathan/Documents/Repos/Stack Builders/ts-retrieve-data-git-app/src/app/models/template.ts">
+        <metrics statements="9" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="9" coveredmethods="8"/>
+        <line num="12" count="8" type="stmt"/>
+        <line num="16" count="8" type="stmt"/>
+        <line num="20" count="8" type="stmt"/>
+        <line num="24" count="8" type="stmt"/>
+        <line num="28" count="8" type="stmt"/>
+        <line num="32" count="8" type="stmt"/>
+        <line num="36" count="8" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="53" count="3" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
